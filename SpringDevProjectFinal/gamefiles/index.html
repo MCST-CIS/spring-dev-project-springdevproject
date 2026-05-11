@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="website.css">
+    <meta charset="utf-8" />
+    <title>Ink and Riff</title>
+    <!-- Load the p5.js library from a CDN -->
+    <script src="https://cloudflare.com"></script>
+  </head>
+  <body>
+    <h1><span class="Ink">Ink </span> And <span class="Riff"> RIFF</span></h1>
+    <h3>Description: This project was made to be a fun 2 player fighting game that represents the two creators as friends in their unique ways. Me and my partner made it as a way to represent ourselves in a fun, playful, and creative way. The game has 2 players, one a punk themed player to represent Natalie and her connection to music, and one an artist themed player to represent Laura and her connection to art. </h3>
+    <h4>User controls</h4>
+    <h4>Player 1: Arrow keys to move up, down, left, and right ‘D’ key to fire ink (no cooldown)</h4>
+    <h4>Player 2: Use right joystick on x-box controller to move To fire press ‘X’ on the controller</h4>
+    <h5>Learning Goal:</h5>
+    <img src="Screenshot 2026-05-11 165254.png">
+    <p>In our game, the push method is used to instantly create and add a new Bullet object to the bullets array the moment a player presses their attack button. This helps because it allows the game to manage multiple projectiles on the screen at the exact same time. Instead of keeping track of every single bullet as a separate variable, the game can simply loop through that one array to smoothly update all of their movements, draw their images to the canvas, and efficiently check if any of them have collided with an enemy.</p>
+    <img src="Screenshot 2026-05-11 165342.png" width = "500">
+    <p>The dist() method is a that calculates the exact distance between two points in this case, the center of a bullet and the center of an enemy and then returns that measurement as a number, which the code then temporarily stores in the variable dL. This is useful because it allows the game to mathematically check if that returned distance is small enough to count as a collision, letting the game engine know exactly when a bullet has successfully hit an enemy.</p>
+    <!--LLM Assitance Paragraph-->
+    <div id="sketch-container">
+    <iframe style="width: 1500px; height: 800px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://editor.p5js.org/natalie.yagozinski/full/VF1JJGWDi"></iframe>
+    </div>
+  </body>
+</html>
